@@ -1,0 +1,12 @@
+/** Favorite books:
+Master & Margarita - 1
+Crime & Punishment - 3
+11 minutes - 4
+Shantaram - 2**/
+
+CREATE TABLE Favorite_books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+INSERT INTO Favorite_books VALUES (1, "Master&Margarita", "1");
+INSERT INTO Favorite_books VALUES (2, "Crime&Punishment", "3");
+INSERT INTO Favorite_books VALUES (3, "11 minues", "4");
+INSERT INTO Favorite_books VALUES (4, "Shantaram", "2");
+SELECT * FROM Favorite_books;
