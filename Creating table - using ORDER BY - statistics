@@ -1,0 +1,38 @@
+/** Create own clothing store: Have a table for all the items in the store, and at least 5 columns for the kind of data that should be stored. Sell at least 15 items,
+and use select statements to order the items by price and showing at least one statistic about the items.
+1 Jacket
+2 Jumper
+3 T-shirt
+4 Socks
+5 Underwear
+6 Jeans 
+7 Sweatpants
+8 Trainers
+9Bag
+10Suit
+11 Slippers
+12 Skirt
+13 Dresses
+14 Shorts
+15 Pygamas**/
+
+CREATE TABLE Clothing_store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, unit_price INTEGER, sold INTEGER);
+INSERT INTO Clothing_store VALUES (1, "Jacket", 25, 50, 7);
+INSERT INTO Clothing_store VALUES (2, "Jumper", 9, 25, 3);
+INSERT INTO Clothing_store VALUES (3, "T-shirt", 15, 10, 10);
+INSERT INTO Clothing_store VALUES (4, "Socks", 30, 3, 25);
+INSERT INTO Clothing_store VALUES (5, "Underwear", 50, 5, 20);
+INSERT INTO Clothing_store VALUES (6, "Jeans", 20, 20, 8);
+INSERT INTO Clothing_store VALUES (7, "Sweatpants", 15, 25, 4);
+INSERT INTO Clothing_store VALUES (8, "Trainers", 10, 30, 5);
+INSERT INTO Clothing_store VALUES (9, "Bag", 5, 35, 1);
+INSERT INTO Clothing_store VALUES (10, "Suit", 18, 40, 15);
+INSERT INTO Clothing_store VALUES (11, "Slippers", 10, 7, 5);
+INSERT INTO Clothing_store VALUES (12, "Skirt", 15, 15, 12);
+INSERT INTO Clothing_store VALUES (13, "Office Dresses", 30, 25, 18); 
+INSERT INTO Clothing_store VALUES (14, "Shorts", 5, 10, 2); 
+INSERT INTO Clothing_store VALUES (15, "Pygama Set", 10, 15,5);
+SELECT * FROM Clothing_store WHERE unit_price > 3 ORDER BY unit_price ASC;
+SELECT SUM(sold) FROM Clothing_store;
+
+
